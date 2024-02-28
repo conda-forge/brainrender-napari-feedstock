@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
   run:
-    - bg-atlasapi
+    - brainglobe-atlasapi >=2.0.1
     - napari >=0.4.18
     - numpy
     - python >=3.9.0
