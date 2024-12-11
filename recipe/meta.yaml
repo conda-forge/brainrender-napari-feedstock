@@ -1,13 +1,13 @@
 {% set name = "brainrender-napari" %}
-{% set version = "0.0.4.post1" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7ac81a617be6cf3c7469b59ee3554ab10637e3672c46c62fa0dca44607996e58
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 754b693c4c6bf55c7cfd22c95713fc75d1b6b204e7c1d30775b61cb2b9961ba6
 
 build:
   noarch: python
