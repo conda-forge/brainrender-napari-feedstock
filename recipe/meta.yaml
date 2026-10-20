@@ -1,14 +1,14 @@
 {% set python_min = "3.12.0" %}
 {% set name = "brainrender-napari" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 421cfc31dded04269a6e88e798f3afc63cf7e2d95ff243d20a3e13b44848daff
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d4e5b8e112b24c0c7cef145341dba95736016f842fa403cf282fb919ce3c7c62
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - brainglobe-atlasapi >=3.0.1
     - brainglobe-utils >=0.5.0
     - meshio
-    - napari >=0.4.18
+    - napari >=0.6.1
     - numpy
     - python >={{ python_min }}
     - qtpy
